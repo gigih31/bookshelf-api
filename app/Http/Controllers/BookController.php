@@ -11,7 +11,7 @@ class BookController extends Controller
 {
     public function index(Request $request)
     {
-        $books = Book::paginate(10); 
+        $books = Book::paginate(2); 
 
         return response()->json($books);
     }
